@@ -10,9 +10,8 @@ class PostListView(ListView):
     paginate_by = 5
 
 
-class PostCteateView(CreateView):
+class PostCreateView(CreateView):
     model = Post
     fields = ['content']
     template_name = 'tweet/post_create.html'
     success_url = '/'
-    
