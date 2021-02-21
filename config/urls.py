@@ -30,5 +30,5 @@ urlpatterns = [
     path('', include('django.contrib.auth.urls')),
     path('signup/', views.SignUpView.as_view(), name='signup'),
     path('', include('user.urls')),
-    path('', include('tweet.urls')),
+    path('tweet/', include('tweet.urls')),
 ]

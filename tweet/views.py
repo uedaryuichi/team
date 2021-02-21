@@ -14,4 +14,4 @@ class PostCreateView(CreateView):
     model = Post
     fields = ['content']
     template_name = 'tweet/post_create.html'
-    success_url = '/'
+    success_url = '/tweet/'
